@@ -11,6 +11,7 @@
     margin: auto auto;
     margin-top: 7rem;
     border-radius: 2rem;
+    position: relative;
 }
 
 .main-body {
@@ -85,14 +86,14 @@
     text-align: center;
     margin: auto auto;
     position: absolute;
-    top: 3rem;
-    left: 28.9rem;
+    top: -5rem;
+    left: 2rem;
     animation: akay 2s forwards;
 }
 @keyframes akay {
     from{
         position: absolute;
-        transform: translateY(-9rem);
+        transform: translateY(-20rem);
     }
     to{
         position: absolute;
@@ -144,6 +145,12 @@
     .result {
         margin-top: 2rem;
     }
+    .popinfo{
+        width: 23rem;
+    }
+    .popinfobut{
+        margin-left: 18.4rem;
+    }
 }
 
 @media screen and (max-width:455px) {
@@ -153,6 +160,13 @@
     .clearbut{
         margin-top: 7px;
     }
+    .popinfo{
+        width: 21rem;
+        left: 1.2rem;
+    }
+    .popinfobut{
+        margin-left: 17rem;
+    }
 }
 @media screen and (max-width:397px) {
     .mainframe {
@@ -160,6 +174,13 @@
     }
     .fromto>select{
         width: 17rem;
+    }
+    .popinfo{
+        width: 18rem;
+        left: 1.2rem;
+    }
+    .popinfobut{
+        margin-left: 14rem;
     }
 }
 @media screen and (max-width:349px) {
@@ -171,5 +192,12 @@
     }
     .fromto>select{
         width: 15rem;
+    }
+    .popinfo{
+        width: 16rem;
+        left: 1rem;
+    }
+    .popinfobut{
+        margin-left: 12rem;
     }
 }
