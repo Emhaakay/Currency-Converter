@@ -10,22 +10,28 @@ button.addEventListener('click', () => {
         span.innerHTML = amount
     } else if (from.value === "NGN" && to.value === "USD") {
         var amount = (input.value / 700)
-        span.innerHTML = "$" + amount
+        var roundedAmount = Number(amount.toFixed(3))
+        span.innerHTML = "$" + roundedAmount
     } else if (to.value === "NGN" && from.value === "USD") {
         var amount = (input.value * 700)
-        span.innerHTML = "N" + amount
+        var roundedAmount = Number(amount.toFixed(3))
+        span.innerHTML = "N" + roundedAmount
     } else if (from.value === "NGN" && to.value === "EUR") {
         var amount = (input.value * 250)
-        span.innerHTML = "Eu" + amount
+        var roundedAmount = Number(amount.toFixed(3))
+        span.innerHTML = "Eu" + roundedAmount
     } else if (to.value === "NGN" && from.value === "EUR") {
         var amount = (input.value / 250)
-        span.innerHTML = "N" + amount
+        var roundedAmount = Number(amount.toFixed(3))
+        span.innerHTML = "N" + roundedAmount
     } else if (from.value === "USD" && to.value === "EUR") {
         var amount = (input.value * 25)
-        span.innerHTML = "Eu" + amount
+        var roundedAmount = Number(amount.toFixed(3))
+        span.innerHTML = "Eu" + roundedAmount
     } else if (to.value === "USD" && from.value === "EUR") {
         var amount = (input.value / 25)
-        span.innerHTML = "$" + amount
+        var roundedAmount = Number(amount.toFixed(3))
+        span.innerHTML = "$" + roundedAmount
     }
 
 })
