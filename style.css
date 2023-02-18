@@ -118,6 +118,9 @@
     .mainframe {
         width: 24rem;
     }
+    .clearbut{
+        margin-top: 7px;
+    }
 }
 @media screen and (max-width:397px) {
     .mainframe {
