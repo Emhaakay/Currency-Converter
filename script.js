@@ -5,30 +5,27 @@ let from = document.getElementById("from")
 let to = document.getElementById("to")
 
 button.addEventListener('click', () => {
-    // var akay = input.value;
-    // span.innerHTML = akay
-
     if (from.value === to.value) {
-        var james = input.value
-        span.innerHTML = james
+        var amount = input.value
+        span.innerHTML = amount
     } else if (from.value === "NGN" && to.value === "USD") {
-        var james = (input.value / 700)
-        span.innerHTML = "$" + james
+        var amount = (input.value / 700)
+        span.innerHTML = "$" + amount
     } else if (to.value === "NGN" && from.value === "USD") {
-        var james = (input.value * 700)
-        span.innerHTML = "N" + james
+        var amount = (input.value * 700)
+        span.innerHTML = "N" + amount
     } else if (from.value === "NGN" && to.value === "EUR") {
-        var james = (input.value * 250)
-        span.innerHTML = "Eu" + james
+        var amount = (input.value * 250)
+        span.innerHTML = "Eu" + amount
     } else if (to.value === "NGN" && from.value === "EUR") {
-        var james = (input.value / 250)
-        span.innerHTML = "N" + james
-    }else if(from.value==="USD"&& to.value==="EUR"){
-        var james = (input.value*25)
-        span.innerHTML = "Eu" + james
-    }else if(to.value==="USD"&& from.value==="EUR"){
-        var james =(input.value/25)
-        span.innerHTML = "$" + james
+        var amount = (input.value / 250)
+        span.innerHTML = "N" + amount
+    } else if (from.value === "USD" && to.value === "EUR") {
+        var amount = (input.value * 25)
+        span.innerHTML = "Eu" + amount
+    } else if (to.value === "USD" && from.value === "EUR") {
+        var amount = (input.value / 25)
+        span.innerHTML = "$" + amount
     }
 
 })
@@ -36,7 +33,7 @@ button.addEventListener('click', () => {
 
 let clear = document.querySelector(".clearbut")
 
-clear.addEventListener('click', ()=>{
+clear.addEventListener('click', () => {
     input.value = ""
     span.innerHTML = ""
 })

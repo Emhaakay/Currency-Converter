@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.mainframe{
+.mainframe {
     padding: 2rem;
     background-color: grey;
     width: 30rem;
@@ -13,47 +13,128 @@
     border-radius: 2rem;
 }
 
-.main-body{
+.main-body {
     margin-top: 2rem;
 }
-.main-body>input{
+
+.main-body>input {
     text-indent: 5px;
 }
-.currencyinput{
+
+.currencyinput {
     width: 20rem;
     height: 1.7rem;
-    
+
 }
-.currencyinput::placeholder{
-    letter-spacing: 10px;
+
+.currencyinput::placeholder {
+    letter-spacing: 6px;
     text-indent: 10px;
 }
-.currencyinputbut{
+
+.currencyinputbut {
     height: 1.7rem;
-    width: 2rem;
+    width: 2.2rem;
+    background-color: green;
+    border: 2px double black;
+    border-radius: 10px;
 }
-.currencyinputbut:hover{
-    background-color: teal;
-    border: none;
+
+.currencyinputbut:hover {
+    background-color: rgb(36, 156, 36);
+
     color: white;
 }
-.clearbut{
+
+.clearbut {
     padding: 2px;
     height: 1.7rem;
+    background-color: red;
+    border: 2px double black;
+    border-radius: 10px;
 }
-.clearbut:hover{
-    background-color: teal;
-    border: none;
+
+.clearbut:hover {
+    background-color: rgb(185, 34, 34);
+
     color: white;
 }
-.fromto{
+
+.fromto {
     margin-top: 2rem;
 }
-.fromto>select{
+
+.fromto>select {
     width: 22.2rem;
     height: 1.7rem;
 }
-.result{
+
+.result {
     margin-top: 3rem;
     text-align: center;
+}
+.tag{
+    text-align: center;
+}
+
+@media screen and (max-width: 793px) {
+    .mainframe {
+        padding: 2rem;
+        text-align: ;
+
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .mainframe {
+        width: 27rem;
+    }
+
+    .mainframe>h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .currencyinput {
+        width: 17rem;
+        height: 1.5rem;
+    }
+
+    .fromto>select {
+        width: 20rem;
+        height: 1.5rem;
+    }
+
+    .fromto {
+        margin-top: 1.2rem;
+    }
+
+    .result {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:455px) {
+    .mainframe {
+        width: 24rem;
+    }
+}
+@media screen and (max-width:397px) {
+    .mainframe {
+        width: 21rem;
+    }
+    .fromto>select{
+        width: 17rem;
+    }
+}
+@media screen and (max-width:349px) {
+    .mainframe {
+        width: 18rem;
+    }
+    .currencyinput{
+        width: 15rem;
+    }
+    .fromto>select{
+        width: 15rem;
+    }
 }
