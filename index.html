@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="mainframe">
+        <h1>CURRENCY CONVERTER</h1>
+        <div class="main-body">
+            <input type="number" class="currencyinput" placeholder="Insert an amount" min="0" required id="youri">
+            <button class="currencyinputbut">Ok</button>
+            <button class="clearbut">Clear</button>
+            <div class="fromto">
+                <label for="">From:</label>
+                <select name="" id="from">
+                    <option value="NGN">Naira</option>
+                    <option value="EUR">Euros</option>
+                    <option value="USD">Dollar</option>
+                </select>
+            </div>
+            <div class="fromto">
+                <label for="">To:</label>
+                <select name="" id="to">
+                    <option value="USD">Dollar</option>
+                    <option value="EUR">Euros</option>
+                    <option value="NGN">Naira</option>
+                </select>
+            </div>
+        </div>
+        <div class="result">
+            <h3>Result: <span id="resultee"></span></h3>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

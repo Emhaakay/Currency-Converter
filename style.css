@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainframe{
+    padding: 2rem;
+    background-color: grey;
+    width: 30rem;
+    margin: auto auto;
+    margin-top: 7rem;
+    border-radius: 2rem;
+}
+
+.main-body{
+    margin-top: 2rem;
+}
+.main-body>input{
+    text-indent: 5px;
+}
+.currencyinput{
+    width: 20rem;
+    height: 1.7rem;
+    
+}
+.currencyinput::placeholder{
+    letter-spacing: 10px;
+    text-indent: 10px;
+}
+.currencyinputbut{
+    height: 1.7rem;
+    width: 2rem;
+}
+.currencyinputbut:hover{
+    background-color: teal;
+    border: none;
+    color: white;
+}
+.clearbut{
+    padding: 2px;
+    height: 1.7rem;
+}
+.clearbut:hover{
+    background-color: teal;
+    border: none;
+    color: white;
+}
+.fromto{
+    margin-top: 2rem;
+}
+.fromto>select{
+    width: 22.2rem;
+    height: 1.7rem;
+}
+.result{
+    margin-top: 3rem;
+    text-align: center;
+}
