@@ -77,6 +77,40 @@
     text-align: center;
 }
 
+.popinfo{
+    background-color: yellow;
+    padding: 2rem;
+    width: 27rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: auto auto;
+    position: absolute;
+    top: 3rem;
+    left: 28.9rem;
+    animation: akay 2s forwards;
+}
+@keyframes akay {
+    from{
+        position: absolute;
+        transform: translateY(-9rem);
+    }
+    to{
+        position: absolute;
+        transform: translateY(2rem);
+    }
+}
+.popinfobut{
+    font-size: 1.4rem;
+    margin-left: 22.5rem;
+    margin-top: -1.5rem;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 793px) {
     .mainframe {
         padding: 2rem;

@@ -43,3 +43,11 @@ clear.addEventListener('click', () => {
     input.value = ""
     span.innerHTML = ""
 })
+
+
+let butto = document.getElementById("popinfobut")
+let pop = document.getElementById("popinfo")
+
+butto.addEventListener('click', ()=>{
+    pop.style.display= "none"
+})
