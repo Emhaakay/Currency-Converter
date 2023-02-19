@@ -77,6 +77,17 @@
 .tag{
     text-align: center;
 }
+.help>i:hover{
+    background-color: red;
+}
+.help>i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    position: absolute;
+    top: 1rem;
+    left: 27.6rem;
+}
 
 .popinfo{
     background-color: yellow;
@@ -151,6 +162,9 @@
     .popinfobut{
         margin-left: 18.4rem;
     }
+    .help>i{
+        left: 24.5rem;        
+    }
 }
 
 @media screen and (max-width:455px) {
@@ -167,6 +181,9 @@
     .popinfobut{
         margin-left: 17rem;
     }
+    .help>i{
+        left: 21.7rem;        
+    }
 }
 @media screen and (max-width:397px) {
     .mainframe {
@@ -181,6 +198,9 @@
     }
     .popinfobut{
         margin-left: 14rem;
+    }
+    .help>i{
+        left: 18.8rem;        
     }
 }
 @media screen and (max-width:349px) {
@@ -199,5 +219,8 @@
     }
     .popinfobut{
         margin-left: 12rem;
+    }
+    .help>i{
+        left: 15.8rem;        
     }
 }

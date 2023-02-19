@@ -51,3 +51,9 @@ let pop = document.getElementById("popinfo")
 butto.addEventListener('click', ()=>{
     pop.style.display= "none"
 })
+
+
+let helpp = document.getElementById("help")
+helpp.addEventListener('click', ()=>{
+    pop.style.display= "block"
+})
