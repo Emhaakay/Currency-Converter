@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #333;
+}
 
 .mainframe {
     padding: 2rem;
@@ -76,6 +79,7 @@
 }
 .tag{
     text-align: center;
+    color: white;
 }
 .help>i:hover{
     background-color: red;

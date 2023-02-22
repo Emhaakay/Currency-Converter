@@ -4,6 +4,7 @@ var span = document.getElementById("resultee")
 let from = document.getElementById("from")
 let to = document.getElementById("to")
 
+
 button.addEventListener('click', () => {
     if (from.value === to.value) {
         var amount = input.value
