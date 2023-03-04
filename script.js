@@ -1,49 +1,31 @@
+const apiKey =  'cd311ab4500e4bc145caa97d'
 let button = document.querySelector(".currencyinputbut")
 let input = document.getElementById("youri")
 var span = document.getElementById("resultee")
-let from = document.getElementById("from")
-let to = document.getElementById("to")
+
+button.addEventListener('click', convertCurrency)
+
+function convertCurrency(){
+    const amount = document.querySelector(".currencyinput").value;
+    const from = document.getElementById("from").value;
+    const to = document.getElementById("to").value;
+    
 
 
-button.addEventListener('click', () => {
-    if (from.value === to.value) {
-        var amount = input.value
-        span.innerHTML = amount
-    } else if (from.value === "NGN" && to.value === "USD") {
-        var amount = (input.value / 700)
-        var roundedAmount = Number(amount.toFixed(3))
-        span.innerHTML = "$" + roundedAmount
-    } else if (to.value === "NGN" && from.value === "USD") {
-        var amount = (input.value * 700)
-        var roundedAmount = Number(amount.toFixed(3))
-        span.innerHTML = "N" + roundedAmount
-    } else if (from.value === "NGN" && to.value === "EUR") {
-        var amount = (input.value * 250)
-        var roundedAmount = Number(amount.toFixed(3))
-        span.innerHTML = "Eu" + roundedAmount
-    } else if (to.value === "NGN" && from.value === "EUR") {
-        var amount = (input.value / 250)
-        var roundedAmount = Number(amount.toFixed(3))
-        span.innerHTML = "N" + roundedAmount
-    } else if (from.value === "USD" && to.value === "EUR") {
-        var amount = (input.value * 25)
-        var roundedAmount = Number(amount.toFixed(3))
-        span.innerHTML = "Eu" + roundedAmount
-    } else if (to.value === "USD" && from.value === "EUR") {
-        var amount = (input.value / 25)
-        var roundedAmount = Number(amount.toFixed(3))
-        span.innerHTML = "$" + roundedAmount
-    }
-
-})
+    const myLink = `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${from}/${to}/${amount}`;
 
 
-let clear = document.querySelector(".clearbut")
+    fetch(myLink)
+    .then(data=>data.json())
+    .then(fred=>{
+        const convertedAmount = fred.conversion_result.toFixed(2); 
+        document.getElementById('resultee').innerHTML = ` ${convertedAmount} ${to}`;
+    })
+    .catch(err=>console.log(err))
 
-clear.addEventListener('click', () => {
-    input.value = ""
-    span.innerHTML = ""
-})
+    
+}
+
 
 
 let butto = document.getElementById("popinfobut")
@@ -58,3 +40,14 @@ let helpp = document.getElementById("help")
 helpp.addEventListener('click', ()=>{
     pop.style.display= "block"
 })
+
+let clear = document.querySelector(".clearbut")
+
+clear.addEventListener('click', () => {
+   input.value = ""
+    span.innerHTML = ""
+})
+
+
+
+
