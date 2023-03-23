@@ -30,7 +30,7 @@ body{
 .currencyinput {
     width: 20rem;
     height: 1.7rem;
-
+border-radius: 5px;
 }
 
 .currencyinput::placeholder {
@@ -107,6 +107,23 @@ body{
     left: 2rem;
     animation: akay 2s forwards;
 }
+.popinfobut{
+    font-size: 1.4rem;
+    margin-left: 22.5rem;
+    margin-top: -1.5rem;
+}
+#from{
+    border-radius: 5px;
+}
+#to{
+    border-radius: 5px;
+}
+label{
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/* ANIMATION */
 @keyframes akay {
     from{
         position: absolute;
@@ -117,17 +134,8 @@ body{
         transform: translateY(2rem);
     }
 }
-.popinfobut{
-    font-size: 1.4rem;
-    margin-left: 22.5rem;
-    margin-top: -1.5rem;
-}
 
-
-
-
-
-
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 793px) {
     .mainframe {
