@@ -5,7 +5,7 @@
 }
 body{
     background-color: #333;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .mainframe {
@@ -15,7 +15,7 @@ body{
     width: 30rem;
     margin: auto auto;
     margin-top: 7rem;
-    /* border-radius: 2rem; */
+    border-radius: 20px;
     position: relative;
 }
 
@@ -35,7 +35,7 @@ body{
 
 .currencyinput::placeholder {
     /* letter-spacing: 6px; */
-    text-indent: 10px;
+    text-indent: 3.7px;
 }
 
 .currencyinputbut {

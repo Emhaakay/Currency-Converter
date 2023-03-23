@@ -16,9 +16,10 @@ function convertCurrency(){
 
 
     fetch(myLink)
-    .then(data=>data.json())
-    .then(fred=>{
-        const convertedAmount = fred.conversion_result.toFixed(2); 
+    .then(response=>response.json())
+    .then(data=>{
+        console.log(data)
+        const convertedAmount = data.conversion_rate.toFixed(3); 
         document.getElementById('resultee').innerHTML = ` ${convertedAmount} ${to}`;
     })
     .catch(err=>console.log(err))
