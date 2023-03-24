@@ -77,7 +77,9 @@ border-radius: 5px;
 
 .result {
     margin-top: 3rem;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    
 }
 .tag{
     text-align: center;
@@ -122,6 +124,15 @@ label{
     font-size: 1rem;
     font-weight: 900;
 }
+#resultee{
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 10px;
+    min-width: 10rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+
 
 /* ANIMATION */
 @keyframes akay {

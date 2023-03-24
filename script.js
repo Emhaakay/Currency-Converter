@@ -56,7 +56,9 @@ let clear = document.querySelector(".clearbut")
 clear.addEventListener('click', () => {
    amount.value = ""
     span.innerHTML = ""
+   
 })
+
 
 
 
