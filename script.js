@@ -1,9 +1,11 @@
 const apiKey =  'cd311ab4500e4bc145caa97d'
-let button = document.querySelector(".currencyinputbut")
-let input = document.getElementById("youri")
-var span = document.getElementById("resultee")
+let button = document.querySelector(".currencyinputbut")  //This is the OK button
+const amount = document.querySelector(".currencyinput")   //This is the input box
+var span = document.getElementById("resultee")            //This is where the result will be shown
 
-button.addEventListener('click', convertCurrency)
+
+
+
 
 function convertCurrency(){
     const amount = document.querySelector(".currencyinput").value;
@@ -20,7 +22,7 @@ function convertCurrency(){
     .then(data=>{
         console.log(data)
         const convertedAmount = data.conversion_result.toFixed(3); 
-        document.getElementById('resultee').innerHTML = ` ${convertedAmount} ${to}`;
+        span.innerHTML = ` ${convertedAmount} ${to}`;
     })
     .catch(err=>console.log(err))
 
@@ -28,7 +30,11 @@ function convertCurrency(){
 }
 
 
+/* WHEN I CLICK THE `OK` BUTTON */
+button.addEventListener('click', convertCurrency)
 
+
+/* WHEN I CLICK THE BANNER "X" BUTTON */
 let butto = document.getElementById("popinfobut")
 let pop = document.getElementById("popinfo")
 
@@ -37,15 +43,18 @@ butto.addEventListener('click', ()=>{
 })
 
 
+
+/* WHEN I CLICK THE HELP BUTTON */
 let helpp = document.getElementById("help")
 helpp.addEventListener('click', ()=>{
     pop.style.display= "block"
 })
 
+/* WHEN I CLICK THE CLEAR BUTTON */
 let clear = document.querySelector(".clearbut")
 
 clear.addEventListener('click', () => {
-   input.value = ""
+   amount.value = ""
     span.innerHTML = ""
 })
 
