@@ -19,7 +19,7 @@ function convertCurrency(){
     .then(response=>response.json())
     .then(data=>{
         console.log(data)
-        const convertedAmount = data.conversion_rate.toFixed(3); 
+        const convertedAmount = data.conversion_result.toFixed(3); 
         document.getElementById('resultee').innerHTML = ` ${convertedAmount} ${to}`;
     })
     .catch(err=>console.log(err))
