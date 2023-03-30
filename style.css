@@ -18,6 +18,9 @@ body{
     border-radius: 20px;
     position: relative;
 }
+.mainframe>h1{
+    font-family: cursive;
+}
 
 .main-body {
     margin-top: 2rem;
@@ -29,9 +32,10 @@ body{
 
 .currencyinput {
     width: 20rem;
-    height: 1.7rem;
+    height: 1.9rem;
 border-radius: 5px;
 }
+
 
 .currencyinput::placeholder {
     /* letter-spacing: 6px; */
@@ -39,11 +43,11 @@ border-radius: 5px;
 }
 
 .currencyinputbut {
-    height: 1.7rem;
+    height: 1.9rem;
     width: 2.2rem;
-    background-color: green;
+    background-color: rgb(226, 209, 209);
     border: 2px double black;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .currencyinputbut:hover {
@@ -54,10 +58,10 @@ border-radius: 5px;
 
 .clearbut {
     padding: 2px;
-    height: 1.7rem;
-    background-color: red;
+    height: 1.9rem;
+    background-color: rgb(226, 209, 209);
     border: 2px double black;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .clearbut:hover {
@@ -86,7 +90,7 @@ border-radius: 5px;
     color: white;
 }
 .help>i:hover{
-    background-color: red;
+    background-color: rgb(212, 160, 160);
 }
 .help>i{
     background-color: white;
@@ -98,7 +102,8 @@ border-radius: 5px;
 }
 
 .popinfo{
-    background-color: yellow;
+    background-color: rgb(78, 78, 78);
+    color: white;
     padding: 2rem;
     width: 27rem;
     border-radius: 1rem;
@@ -131,6 +136,9 @@ label{
     min-width: 10rem;
     height: 1.5rem;
     font-size: 1.2rem;
+}
+p>a{
+    color: white;
 }
 
 
